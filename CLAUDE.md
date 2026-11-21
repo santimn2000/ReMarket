@@ -17,7 +17,7 @@ Marketplace de segunda mano generalista (estilo Wallapop) donde conviven particu
 |---|---|
 | Frontend | Angular 22, standalone components, signals, control flow nativo (`@if`, `@for`), PrimeNG, ngx-echarts, Leaflet, powerbi-client-angular |
 | Backend | Java 21, Spring Boot 4.1, Maven, Spring Web, Spring Security (JWT), Spring Data JPA + Hibernate, Hibernate Spatial, Flyway, WebSocket (STOMP), springdoc-openapi, stripe-java |
-| Datos | PostgreSQL + PostGIS (imagen `postgis/postgis`), Redis (caché, rate limit, pub/sub), MinIO (fotos y adjuntos, compatible S3) |
+| Datos | PostgreSQL + PostGIS (imagen `postgis/postgis`), Redis (caché, rate limit, pub/sub), MinIO (fotos y adjuntos, compatible S3; imagen `pgsty/silo`, fork de MinIO, según ADR-0002) |
 | Python | Python 3.12, uv, FastAPI, scikit-learn, pandas, Faker, discord.py, python-telegram-bot |
 | Infra | Docker Compose, GitHub Actions, Stripe CLI para webhooks en local |
 
@@ -220,7 +220,8 @@ Mis compras y ventas, ofertas recibidas de empresas, mis tickets, ingresos y CO2
 ## Comandos
 
 ```bash
-docker compose up -d                                   # postgres+postgis, redis, minio
+cp .env.example .env                                   # solo la primera vez
+docker compose up -d                                   # postgres+postgis, redis, minio (silo)
 cd backend && ./mvnw spring-boot:run                   # API en :8080
 cd backend && ./mvnw verify                            # tests backend
 cd frontend && npm start                               # app en :4200
