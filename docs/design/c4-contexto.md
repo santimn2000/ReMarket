@@ -25,8 +25,7 @@ flowchart LR
   admin -- "Gestiona y consulta paneles" --> remarket
   admin -- "Ve los informes embebidos" --> powerbi
 
-  remarket -- "Cobra, retiene, transfiere y reembolsa" --> stripe
-  stripe -. "Webhooks firmados" .-> remarket
+  remarket <-- "Cobra, retiene, transfiere y reembolsa / Webhooks firmados" --> stripe
   remarket -- "Geocodifica direcciones" --> nominatim
   remarket -- "Carga la población" --> ine
   remarket -- "Envía alertas" --> discord
@@ -42,7 +41,7 @@ flowchart LR
   class stripe,nominatim,ine,discord,telegram,entra,powerbi external
 ```
 
-**Leyenda:** azul oscuro, personas; azul, el sistema ReMarket; gris, sistemas externos. Cada flecha va de quien inicia la interacción a quien la recibe; la discontinua marca los webhooks, que Stripe envía a ReMarket de forma asíncrona.
+**Leyenda:** azul oscuro, personas; azul, el sistema ReMarket; gris, sistemas externos. Cada flecha va de quien inicia la interacción a quien la recibe. La de Stripe es doble porque la interacción va en los dos sentidos: ReMarket llama a su API y Stripe avisa a ReMarket con webhooks firmados.
 
 > El diagrama usa un `flowchart` de Mermaid con la notación y los colores de C4 en lugar del tipo `C4Context`. Con `C4Context`, Mermaid coloca los elementos en filas fijas y las etiquetas de las relaciones se solapan entre sí y con las cajas; el `flowchart` reparte los elementos y las etiquetas automáticamente y se lee bien en GitHub.
 
