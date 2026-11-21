@@ -12,5 +12,7 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/) y e
 - Plantillas de issue (historia de usuario, bug y spike) y de pull request.
 - ADR-0001: registrar las decisiones de arquitectura con ADRs.
 - Seguimiento por fases en `docs/PROGRESS.md` e ids del tablero en `docs/github-project.md`.
+- Visión del producto en `docs/vision.md`: problema, tipos de cuenta, diferenciales y lo que queda fuera del alcance.
+- Diagrama C4 de contexto en `docs/design/c4-contexto.md`.
 
 [Unreleased]: https://github.com/santimn2000/ReMarket/commits/main
