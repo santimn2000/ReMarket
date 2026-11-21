@@ -13,7 +13,7 @@ Checklist por fases, sacada de `## Fases` del CLAUDE.md. Cada fase es un milesto
 - [x] ADR-0001: registrar decisiones con ADRs (#1)
 - [ ] Dependabot
 - [ ] SonarQube Cloud
-- [ ] `docs/vision.md` y diagrama C4 de contexto
+- [x] `docs/vision.md` y diagrama C4 de contexto (#3)
 - [ ] Monorepo y docker-compose (PostgreSQL + PostGIS, Redis y MinIO)
 - [ ] Spring Boot arrancando
 - [ ] Angular arrancando con layout de PrimeNG
