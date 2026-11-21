@@ -220,7 +220,8 @@ Mis compras y ventas, ofertas recibidas de empresas, mis tickets, ingresos y CO2
 ## Comandos
 
 ```bash
-docker compose up -d                                   # postgres+postgis, redis, minio
+cp .env.example .env                                   # solo la primera vez
+docker compose up -d                                   # postgres+postgis, redis, minio (silo)
 cd backend && ./mvnw spring-boot:run                   # API en :8080
 cd backend && ./mvnw verify                            # tests backend
 cd frontend && npm start                               # app en :4200

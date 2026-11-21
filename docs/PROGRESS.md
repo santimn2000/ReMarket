@@ -22,7 +22,7 @@ Cada línea enlaza la issue o las issues que la cubren. En qué consiste cada un
 - [ ] Dependabot ([#12])
 - [ ] SonarQube Cloud ([#11])
 - [x] `docs/vision.md` y diagrama C4 de contexto ([#3])
-- [ ] Monorepo y docker-compose (PostgreSQL + PostGIS, Redis y MinIO) ([#4])
+- [x] Monorepo y docker-compose (PostgreSQL + PostGIS, Redis y MinIO) ([#4])
 - [ ] Spring Boot arrancando ([#5], [#6])
 - [ ] Angular arrancando con layout de PrimeNG ([#7], [#8])
 - [ ] Esqueleto del ml-service con FastAPI y uv ([#9])
