@@ -18,7 +18,7 @@ Marketplace de segunda mano generalista donde conviven particulares y tiendas de
 |---|---|
 | Frontend | Angular, PrimeNG, ngx-echarts, Leaflet |
 | Backend | Java 21, Spring Boot, Spring Security (JWT), JPA + Hibernate Spatial, Flyway, WebSocket |
-| Datos | PostgreSQL + PostGIS, Redis, MinIO |
+| Datos | PostgreSQL + PostGIS, Redis, MinIO (imagen de Silo) |
 | Python | FastAPI, scikit-learn, pandas, bots de Discord y Telegram |
 | Infra | Docker Compose, GitHub Actions, Stripe (modo test) |
 
