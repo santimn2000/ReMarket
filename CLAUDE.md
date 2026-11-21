@@ -246,7 +246,7 @@ Actualiza esta sección si cambian los comandos.
 
 Este proyecto sigue la skill personal `flujo-github`: cárgala antes de preparar el repositorio, empezar o cerrar una fase, o trabajar una issue. Si no está disponible, para y avísame.
 
-- **Tablero:** `ReMarket`
+- **Tablero:** `ReMarket`, con las columnas en inglés: `Backlog`, `Ready` (Listo), `In Progress` (En curso), `In Review` (Revisión) y `Done` (Hecho). Los ids están en `docs/github-project.md`.
 - **Áreas:** `backend`, `frontend`, `python`, `infra`
 - **Tipos de usuario para las demos:** particular, empresa (pendiente y validada), moderador y admin.
 - **v1.0.0:** al cerrar la fase 9.
