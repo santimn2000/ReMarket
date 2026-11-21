@@ -1,0 +1,15 @@
+# Finales de línea LF en el repo, aunque se edite en Windows (la CI corre en Linux)
+* text=auto eol=lf
+
+# Scripts de Windows con CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.jar binary
+*.pbix binary
